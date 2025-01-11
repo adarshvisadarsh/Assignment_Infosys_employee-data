@@ -65,8 +65,8 @@ function App() {
 
   const totalPages = Math.ceil(filteredEmployees.length / itemsPerPage);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  // if (loading) return <p>Loading...</p>;
+  // if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="App">
@@ -75,6 +75,9 @@ function App() {
 
       {/* Search */}
       <SearchBar onSearch={handleSearch} />
+
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
 
       {/* Table */}
       <EmployeeTable

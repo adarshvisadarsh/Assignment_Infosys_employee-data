@@ -3,7 +3,7 @@ import '../style/Modal.css';
 
 function Modal({ employee, onClose }) {
   return (
-    <div className="modal-backdrop" onClick={onClose}>
+    <div className="modal-backdrop" role="presentation" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-btn" onClick={onClose}>
           &times;

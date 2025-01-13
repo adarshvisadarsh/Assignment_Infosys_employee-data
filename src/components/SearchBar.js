@@ -6,7 +6,7 @@ function SearchBar({ onSearch }) {
 
   const handleSearchClick = () => {
     onSearch(localSearchTerm); 
-   // setLocalSearchTerm('')
+   setLocalSearchTerm('')
   };
 
   return (
